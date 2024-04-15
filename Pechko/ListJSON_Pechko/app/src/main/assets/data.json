@@ -1,0 +1,124 @@
+{
+  "flowers": [
+    {
+      "id": 1,
+      "name": "Розы (Pechko)",
+      "color": "Красный, Розовый, Белый, Желтый, Оранжевый",
+      "origin": "Азия",
+      "image": "https://images.pexels.com/photos/736230/pexels-photo-736230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "meaning": "Любовь, красота, уважение, память, дружба"
+    },
+    {
+      "id": 2,
+      "name": "Пионы (Pechko)",
+      "color": "Розовый, Белый, Красный",
+      "origin": "Азия",
+      "image": "https://images.pexels.com/photos/2534525/pexels-photo-2534525.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "meaning": "Богатство, счастье, здоровье, великодушие"
+    },
+    {
+      "id": 3,
+      "name": "Гипсофилы",
+      "color": "Белый, Розовый",
+      "origin": "Европа",
+      "image": "https://images.pexels.com/photos/14435546/pexels-photo-14435546.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "meaning": "Нежность, чистота, невинность"
+    },
+    {
+      "id": 4,
+      "name": "Ромашки",
+      "color": "Белый",
+      "origin": "Европа",
+      "image": "https://images.pexels.com/photos/3017118/pexels-photo-3017118.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "meaning": "Мир, спокойствие, невинность, чистота"
+    },
+    {
+      "id": 5,
+      "name": "Герберы",
+      "color": "Оранжевый, Желтый, Красный, Розовый, Белый",
+      "origin": "Африка",
+      "image": "https://images.pexels.com/photos/4022207/pexels-photo-4022207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "meaning": "Радость, энергия, дружба, нежность"
+    },
+    {
+      "id": 6,
+      "name": "Лилии",
+      "color": "Белый, Розовый, Оранжевый, Фиолетовый, Желтый",
+      "origin": "Азия",
+      "image": "https://images.pexels.com/photos/12911624/pexels-photo-12911624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "meaning": "Чистота, благородство, жизненная сила, симпатия, гордость"
+    },
+    {
+      "id": 7,
+      "name": "Гвоздики",
+      "color": "Красный, Белый, Розовый",
+      "origin": "Европа",
+      "image": "https://images.pexels.com/photos/16148214/pexels-photo-16148214/free-photo-of-carnations-flowers-in-vase.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "meaning": "Уважение, обожание, силы, признательность, восхищение"
+    },
+    {
+      "id": 8,
+      "name": "Подсолнухи",
+      "color": "Желтый",
+      "origin": "Северная Америка",
+      "image": "https://images.pexels.com/photos/1390433/pexels-photo-1390433.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "meaning": "Лучезарность, долголетие, верность"
+    },
+    {
+      "id": 9,
+      "name": "Орхидеи",
+      "color": "Фиолетовый, Белый, Розовый, Желтый",
+      "origin": "Южная Америка",
+      "image": "https://images.pexels.com/photos/11564311/pexels-photo-11564311.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "meaning": "Роскошь, красота, любовь, страсть, великодушие"
+    },
+    {
+      "id": 10,
+      "name": "Георгины",
+      "color": "Розовый, Фиолетовый, Белый, Красный, Желтый, Оранжевый",
+      "origin": "Мексика",
+      "image": "https://images.pexels.com/photos/924374/pexels-photo-924374.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "meaning": "Уверенность, благородство, уважение, радость"
+    },
+    {
+      "id": 11,
+      "name": "Тюльпаны",
+      "color": "Красный, Белый, Желтый, Розовый, Фиолетовый, Оранжевый",
+      "origin": "Турция",
+      "image": "https://images.pexels.com/photos/1034243/pexels-photo-1034243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "meaning": "Идеальная любовь, утонченность, элегантность"
+    },
+    {
+      "id": 12,
+      "name": "Гортензия",
+      "color": "Синий, Розовый, Белый, Фиолетовый",
+      "origin": "Япония",
+      "image": "https://images.pexels.com/photos/6913065/pexels-photo-6913065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "meaning": "Благородство, благополучие, радость"
+    },
+    {
+      "id": 13,
+      "name": "Эустому",
+      "color": "Белый",
+      "origin": "Япония",
+      "image": "https://images.pexels.com/photos/8605348/pexels-photo-8605348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "meaning": "Благородство, благополучие, чистота"
+    },
+    {
+      "id": 14,
+      "name": "Хризантема",
+      "color": "Желтый, Белый, Розовый, Красный",
+      "origin": "Китай",
+      "image": "https://images.pexels.com/photos/2891092/pexels-photo-2891092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "meaning": "Долголетие, здоровье, верность, дружба"
+    },
+    {
+      "id": 15,
+      "name": "Альстромерия (Pechko)",
+      "color": "Розовый, Белый, Красный, Желтый, Оранжевый",
+      "origin": "Южная Америка",
+      "image": "https://images.pexels.com/photos/17937885/pexels-photo-17937885/free-photo-of-close-up-of-a-bunch-of-peruvian-lilies.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "meaning": "Дружба, верность, процветание, богатство"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RatingImages_Pechko</string>
+    <string name="editMessageForSearch">Введите текст (Pechko)...</string>
+    <string name="ButtonSearch">Поиск</string>
+    <string name="ButtonNext">Следующая (Pechko)</string>
+    <string name="ButtonBack">Предыдущая (Pechko)</string>
+</resources>
