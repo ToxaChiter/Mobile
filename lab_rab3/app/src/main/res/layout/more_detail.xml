@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp">
+
+    <LinearLayout
+            android:id="@+id/nameBookLine"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="30dp">
+
+        <TextView
+                android:id="@+id/bookTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:ems="10"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginEnd="55dp">
+
+                <ImageView
+                        android:id="@+id/bookImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/bookAuthorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="50dp"/>
+
+    <TextView
+            android:id="@+id/bookYearTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"/>
+
+    <TextView
+            android:id="@+id/bookGenreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"/>
+
+    <TextView
+            android:id="@+id/bookLanguageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"/>
+
+    <TextView
+            android:id="@+id/bookRatingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"/>
+
+</LinearLayout>

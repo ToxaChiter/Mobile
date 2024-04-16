@@ -1,0 +1,154 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Старик и море. Рассказы (сборник)",
+      "author": "Эрнест Хемингуэй",
+      "year": "1952",
+      "language": "Русский",
+      "rating": "4.16",
+      "genre": "Повесть",
+      "image": "https://s1.livelib.ru/boocover/1000196575/140/57ea/Ernest_Heminguej__Starik_i_more._Rasskazy_sbornik.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Маленький принц",
+      "author": "Антуан де Сент-Экзюпери",
+      "year": "1942",
+      "language": "Русский",
+      "rating": "4.51",
+      "genre": "Повесть",
+      "image":"https://s1.livelib.ru/boocover/1002999336/140/ecbe/Antuan_de_SentEkzyuperi__Malenkij_prints.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Сто лет одиночества",
+      "author": "Габриэль Гарсиа Маркес",
+      "year": "1967",
+      "language": "Русский",
+      "rating": "4.09",
+      "genre": "Роман",
+      "image": "https://s1.livelib.ru/boocover/1001593410/140/b150/Gabriel_Garsia_Markes__Sto_let_odinochestva.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Война и мир. Книга 1. Том 1,2",
+      "author": "Лев Толстой",
+      "year": "1868",
+      "language": "Русский",
+      "rating": "4.31",
+      "genre": "Роман",
+      "image": "https://s1.livelib.ru/boocover/1002916502/140/5a5f/Lev_Tolstoj__Vojna_i_mir._Kniga_1._Tom_1_2.jpg"
+    },
+    {
+      "id": 5,
+      "title": "1984. Скотный двор",
+      "author": "Джордж Оруэлл",
+      "year": "1945",
+      "language": "Русский",
+      "rating": "4.49",
+      "genre": "Притча",
+      "image": "https://s1.livelib.ru/boocover/1000942736/140/fb20/Dzhordzh_Oruell__1984._Skotnyj_Dvor_sbornik.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Солярис",
+      "author": "Станислав Лем",
+      "year": "1961",
+      "language": "Русский",
+      "rating": "4.27",
+      "genre": "Роман",
+      "image": "https://s1.livelib.ru/boocover/1002367185/140/bab4/Stanislav_Lem__Solyaris.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Мартин Иден",
+      "author": "Джек Лондон",
+      "year": "1909",
+      "language": "Русский",
+      "rating": "4.54",
+      "genre": "Роман",
+      "image": "https://s1.livelib.ru/boocover/1008477196/140/7457/Dzhek_London__Martin_Iden.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Пикник на обочине",
+      "author": "Аркадий и Борис Стругацкие",
+      "year": "1972",
+      "language": "Русский",
+      "rating": "4.38",
+      "genre": "Приключения",
+      "image": "https://s1.livelib.ru/boocover/1006241311/140/94c4/Arkadij_i_Boris_Strugatskie__Piknik_na_obochine.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Лолита",
+      "author": "Владимир Набоков",
+      "year": "1955",
+      "language": "Русский",
+      "rating": "4.04",
+      "genre": "Роман",
+      "image": "https://s1.livelib.ru/boocover/1000196575/140/57ea/Ernest_Heminguej__Starik_i_more._Rasskazy_sbornik.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Робинзон Крузо",
+      "author": "Даниэль Дефо",
+      "year": "1719",
+      "language": "Русский",
+      "rating": "4.29",
+      "genre": "Роман",
+      "image": "https://s1.livelib.ru/boocover/1006079527/140/169a/Daniel_Defo__Robinzon_Kruzo.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Мастер и Маргарита",
+      "author": "Михаил Булгаков",
+      "year": "1966",
+      "language": "Русский",
+      "rating": "4.63",
+      "genre": "Роман",
+      "image": "https://s1.livelib.ru/boocover/1000485837/140/3dac/Mihail_Bulgakov__Master_i_Margarita_sbornik.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Унесённые ветром",
+      "author": "Маргарет Митчелл",
+      "year": "1936",
+      "language": "Русский",
+      "rating": "4.71",
+      "genre": "Роман",
+      "image": "https://s1.livelib.ru/boocover/1003634473/140/3ca5/Margaret_Mitchell__Unesennye_vetrom.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Дракула (сборник)",
+      "author": "Брем Стокер",
+      "year": "1897",
+      "language": "Русский",
+      "rating": "4.18",
+      "genre": "Готическая литература",
+      "image": "https://s1.livelib.ru/boocover/1000534178/140/c86e/Brem_Stoker__Drakula_sbornik.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Франкенштейн (сборник)",
+      "author": "Мэри Шелли",
+      "year": "1818",
+      "language": "Русский",
+      "rating": "4.06",
+      "genre": "Роман",
+      "image": "https://s1.livelib.ru/boocover/1000991966/140/42d1/Meri_Shelli__Frankenshtejn_sbornik.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Братья Карамазовы",
+      "author": "Фёдор Достоевский",
+      "year": "1879",
+      "language": "Русский",
+      "rating": "4.52",
+      "genre": "Роман",
+      "image": "https://s1.livelib.ru/boocover/1006032775/140/cc48/Fjodor_Dostoevskij__Bratya_Karamazovy.jpg"
+    }
+  ]
+}
