@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">lab_5</string>
+    <string name="butAdd">Добавить</string>
+    <string name="butDelete">Удалить</string>
+    <string name="butUpdate">Обновить</string>
+
+</resources>
