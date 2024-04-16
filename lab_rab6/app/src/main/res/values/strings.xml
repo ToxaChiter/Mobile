@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FileDown</string>
+    <string name="nameText">FileDownload</string>
+    <string name="editIDforDownload">Введите ID журнала ...</string>
+    <string name="butDownloadText">Скачать</string>
+    <string name="butSeeText">Просмотр файла</string>
+    <string name="butDeleteText">Удалить</string>
+    <string name="butPoput">+</string>
+
+</resources>
