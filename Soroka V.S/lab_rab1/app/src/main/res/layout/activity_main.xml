@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+    <EditText
+            android:cursorVisible="false"
+            android:layout_width="60pt"
+            android:layout_height="30dp"
+            android:textSize="5pt"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="5pt"
+            android:layout_marginTop="-3pt"
+            android:text="Сорока В.С. (ПО-8, 2024)"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:id="@+id/YouDontDeleteThis"
+            tools:ignore="HardcodedText">
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
+        android:layout_marginBottom="5pt"
+        android:layout_marginTop="5pt"
+        android:layout_height="0dp"
+        android:inputType="text"
+        android:text="0"
+        android:textSize="30pt"
+        android:ems="10"
+        android:id="@+id/editTextText"
+        android:cursorVisible="false"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:gravity="right|center"
+        android:layout_weight="1"
+
+        tools:ignore="HardcodedText,LabelFor,RtlHardcoded"
+        android:importantForAutofill="no"
+    />
+
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <Button
+                    android:id="@+id/buttonAC"
+                    android:text="@string/ac"
+                    android:height="40pt"
+                    android:width="40pt"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5pt"
+                    android:layout_marginLeft="5pt"
+                    android:backgroundTint="@color/grey"
+
+                    android:onClick="clickAC"
+
+                    tools:ignore="RtlHardcoded"
+            />
+            <Button
+                    android:id="@+id/buttonChangeSing"
+                    android:text="+/-"
+                    android:height="40pt"
+                    android:width="40pt"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5pt"
+                    android:backgroundTint="@color/grey"
+
+                    android:onClick="clickNumber"
+
+                    tools:ignore="RtlHardcoded"
+            />
+            <Button
+                    android:id="@+id/buttonPercent"
+                    android:text="%"
+                    android:height="40pt"
+                    android:width="40pt"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5pt"
+                    android:backgroundTint="@color/grey"
+
+                    android:onClick="clickPercent"
+
+                    tools:ignore="RtlHardcoded"
+            />
+            <Button
+                    android:id="@+id/buttonDivision"
+                    android:text="÷"
+                    android:height="40pt"
+                    android:width="40pt"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5pt"
+                    android:backgroundTint="@color/orange"
+
+                    android:onClick="Operation"
+
+                    tools:ignore="RtlHardcoded"
+            />
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <Button
+                    android:id="@+id/buttonSeven"
+                    android:text="7"
+                    android:height="40pt"
+                    android:width="40pt"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5pt"
+                    android:layout_marginLeft="5pt"
+                    android:backgroundTint="@color/whitegrey"
+
+                    android:onClick="clickNumber"
+
+                    tools:ignore="RtlHardcoded"
+            />
+            <Button
+                    android:id="@+id/buttonEight"
+                    android:text="8"
+                    android:height="40pt"
+                    android:width="40pt"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5pt"
+                    android:backgroundTint="@color/whitegrey"
+
+                    android:onClick="clickNumber"
+
+                    tools:ignore="RtlHardcoded"
+            />
+            <Button
+                    android:id="@+id/buttonNine"
+                    android:text="9"
+                    android:height="40pt"
+                    android:width="40pt"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5pt"
+                    android:backgroundTint="@color/whitegrey"
+
+                    android:onClick="clickNumber"
+
+                    tools:ignore="RtlHardcoded"
+            />
+            <Button
+                    android:id="@+id/buttonMultiplication"
+                    android:text="×"
+                    android:height="40pt"
+                    android:width="40pt"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5pt"
+                    android:backgroundTint="@color/orange"
+
+                    android:onClick="Operation"
+
+                    tools:ignore="RtlHardcoded"
+            />
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <Button
+                    android:id="@+id/buttonFour"
+                    android:text="4"
+                    android:height="40pt"
+                    android:width="40pt"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5pt"
+                    android:layout_marginLeft="5pt"
+                    android:backgroundTint="@color/whitegrey"
+
+                    android:onClick="clickNumber"
+
+                    tools:ignore="RtlHardcoded"
+            />
+            <Button
+                    android:id="@+id/buttonFive"
+                    android:text="5"
+                    android:height="40pt"
+                    android:width="40pt"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5pt"
+                    android:backgroundTint="@color/whitegrey"
+
+                    android:onClick="clickNumber"
+
+                    tools:ignore="RtlHardcoded"
+            />
+            <Button
+                    android:id="@+id/buttonSix"
+                    android:text="6"
+                    android:height="40pt"
+                    android:width="40pt"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5pt"
+                    android:backgroundTint="@color/whitegrey"
+
+                    android:onClick="clickNumber"
+
+                    tools:ignore="RtlHardcoded"
+            />
+            <Button
+                    android:id="@+id/buttonMinus"
+                    android:text="−"
+                    android:height="40pt"
+                    android:width="40pt"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5pt"
+                    android:backgroundTint="@color/orange"
+
+                    android:onClick="Operation"
+
+                    tools:ignore="RtlHardcoded"
+            />
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <Button
+                    android:id="@+id/buttonOne"
+                    android:text="1"
+                    android:height="40pt"
+                    android:width="40pt"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5pt"
+                    android:layout_marginLeft="5pt"
+                    android:backgroundTint="@color/whitegrey"
+
+                    android:onClick="clickNumber"
+
+                    tools:ignore="RtlHardcoded"
+            />
+            <Button
+                    android:id="@+id/buttonTwo"
+                    android:text="2"
+                    android:height="40pt"
+                    android:width="40pt"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5pt"
+                    android:backgroundTint="@color/whitegrey"
+
+                    android:onClick="clickNumber"
+
+                    tools:ignore="RtlHardcoded"
+            />
+            <Button
+                    android:id="@+id/buttonThree"
+                    android:text="3"
+                    android:height="40pt"
+                    android:width="40pt"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5pt"
+                    android:backgroundTint="@color/whitegrey"
+
+                    android:onClick="clickNumber"
+
+                    tools:ignore="RtlHardcoded"
+            />
+            <Button
+                    android:id="@+id/buttonPlus"
+                    android:text="+"
+                    android:height="40pt"
+                    android:width="40pt"
+                    android:textSize="12pt"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5pt"
+                    android:backgroundTint="@color/orange"
+
+                    android:onClick="Operation"
+
+                    tools:ignore="RtlHardcoded"
+            />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5pt">
+
+            <Button
+                    android:id="@+id/buttonNull"
+                    android:text="  0"
+                    android:gravity="left|center"
+                    android:height="40pt"
+                    android:width="40pt"
+                    android:textSize="12pt"
+                    android:layout_weight="2"
+                    android:layout_marginRight="5pt"
+                    android:layout_marginLeft="5pt"
+                    android:backgroundTint="@color/whitegrey"
+
+                    android:onClick="clickNumber"
+
+                    tools:ignore="RtlHardcoded"
+                    android:layout_width="396dp"/>
+            <Button
+                    android:id="@+id/buttonComma"
+                    android:text=","
+                    android:height="40pt"
+                    android:width="40pt"
+                    android:textSize="12pt"
+                    android:layout_weight="3"
+                    android:layout_marginRight="5pt"
+                    android:backgroundTint="@color/whitegrey"
+
+                    android:onClick="clickNumber"
+
+                    tools:ignore="RtlHardcoded"
+            />
+            <Button
+                    android:id="@+id/buttonEqual"
+                    android:text="="
+                    android:height="40pt"
+                    android:width="40pt"
+                    android:textSize="12pt"
+                    android:layout_weight="3"
+                    android:layout_marginRight="5pt"
+                    android:backgroundTint="@color/orange"
+
+                    android:onClick="clickEqual"
+
+                    tools:ignore="RtlHardcoded"
+            />
+        </TableRow>
+
+    </LinearLayout>
+</LinearLayout>
