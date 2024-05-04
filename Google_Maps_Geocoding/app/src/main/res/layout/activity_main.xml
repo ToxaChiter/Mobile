@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:map="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/map"
+              android:name="com.google.android.gms.maps.SupportMapFragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".MainActivity">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <EditText
+                    android:layout_width="248dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText"
+                    android:layout_weight="0.5"
+                    android:inputType="textPersonName"
+                    android:hint="Search Location" />
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:tooltipText="ASerko"
+                    android:onClick="searchLocation"
+                    android:text="Search" />
+
+        </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <EditText
+                android:layout_width="248dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText2"
+                android:layout_weight="0.5"
+                android:inputType="textPersonName"
+                android:hint="Enter Coordinates" />
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:tooltipText="ASerko"
+                android:onClick="searchCoordinates"
+                android:text="Search" />
+
+    </LinearLayout>
+    </LinearLayout>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:text="ASERKO"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+
+</fragment>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                           xmlns:app="http://schemas.android.com/apk/res-auto"
+                                           xmlns:tools="http://schemas.android.com/tools"
+                                           android:id="@+id/drawer_layout"
+                                           android:layout_width="match_parent"
+                                           android:layout_height="match_parent"
+                                           tools:context=".MainActivity">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+    <LinearLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <EditText
+                android:id="@+id/origin_place"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"/>
+
+        <EditText
+                android:id="@+id/destination_place"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"/>
+
+        <ImageButton
+                android:id="@+id/search_button"
+                android:layout_width="65dp"
+                android:layout_height="62dp"
+                android:src="@drawable/search"
+                android:tooltipText="ASerko"
+                android:layout_gravity="end"
+                android:layout_marginTop="-70sp"
+                android:onClick="SearchRoutes"/>
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:textSize="16sp"
+                android:padding="16dp"
+
+                android:background="@color/green">
+
+            <TextView
+                    android:id="@+id/directionsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textFontWeight="600"
+                    android:text="Directions By ASerko"
+                    android:textSize="16sp"
+                    android:padding="16dp"/>
+        </ScrollView>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                >
+
+
+        <ImageButton
+                android:layout_height="wrap_content"
+                android:id="@+id/serve"
+                android:layout_width="wrap_content"
+                android:onClick="ServeRoute"
+                android:text="ServeRoute"
+                android:src="@drawable/spy"
+                />
+        <ImageButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+
+                android:id="@+id/panelButton"
+                android:onClick="onShowPanelButtonClick"
+                android:src="@drawable/places"
+
+                />
+        <ImageButton
+                android:layout_height="wrap_content"
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:onClick="shareCurrentLocation"
+                android:src="@drawable/share"
+                />
+
+        <ImageButton
+                android:layout_height="wrap_content"
+                android:id="@+id/routeButton"
+                android:layout_width="wrap_content"
+                android:src="@drawable/route"
+
+                />
+        <ImageButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/clear"
+                android:background="@drawable/clearmap"
+                android:text="Clear Map"
+
+                android:onClick="onClickClear"
+                />
+        </LinearLayout>
+
+        <Button
+                android:layout_height="wrap_content"
+                android:id="@+id/custom"
+                android:layout_width="300sp"
+                android:onClick="toggleRoute"
+                android:text="Add Custom Route"
+                />
+
+
+
+    </LinearLayout>
+
+
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_below="@id/top_layout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/map"
+              tools:context=".MainActivity"
+              android:name="com.google.android.gms.maps.SupportMapFragment">
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:text="ASERKO"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+    </fragment>
+
+</RelativeLayout>
+    <LinearLayout
+            android:id="@+id/side_panel"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        <!-- RecyclerView to display places -->
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/places_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
