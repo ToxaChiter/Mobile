@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sensors.MainPage"
+             BackgroundImageSource="watermark.png">
+
+
+
+
+    <ScrollView>
+        <VerticalStackLayout
+            x:Name="VertStack"
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <HorizontalStackLayout Spacing="10">
+                <Switch 
+                    VerticalOptions="Start"
+                    x:Name="AccelToggle"
+                    IsToggled="True"
+                    Toggled="AccelToggle_Toggled"/>
+                <Label
+                    x:Name="AccelLabel"
+                    Text="Accelerometer Off"
+                    Style="{StaticResource Headline}"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10">
+                <Switch 
+                    VerticalOptions="Start"
+                    x:Name="BarometerToggle"
+                    IsToggled="True"
+                    Toggled="BarometerToggle_Toggled"/>
+                <Label
+                    x:Name="BarometerLabel"
+                    Text="Barometer Off"
+                    Style="{StaticResource Headline}"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10">
+                <Switch 
+                    VerticalOptions="Start"
+                    x:Name="CompassToggle"
+                    IsToggled="True"
+                    Toggled="CompassToggle_Toggled"/>
+                <Label
+                    x:Name="CompassLabel"
+                    Text="Compass Off"
+                    Style="{StaticResource Headline}"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10">
+                <Switch 
+                    VerticalOptions="Start"
+                    x:Name="ShakeToggle"
+                    IsToggled="False"
+                    Toggled="ShakeToggle_Toggled"/>
+                <Label
+                    x:Name="ShakeLabel"
+                    Text="Shake Off"
+                    Style="{StaticResource Headline}"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10">
+                <Switch 
+                    VerticalOptions="Start"
+                    x:Name="GyroscopeToggle"
+                    IsToggled="True"
+                    Toggled="GyroscopeToggle_Toggled"/>
+                <Label
+                    x:Name="GyroscopeLabel"
+                    Text="Gyroscope Off"
+                    Style="{StaticResource Headline}"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10">
+                <Switch 
+                    VerticalOptions="Start"
+                    x:Name="MagnetometerToggle"
+                    IsToggled="True"
+                    Toggled="MagnetometerToggle_Toggled"/>
+                <Label
+                    x:Name="MagnetometerLabel"
+                    Text="Magnetometer Off"
+                    Style="{StaticResource Headline}"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10">
+                <Switch 
+                    VerticalOptions="Start"
+                    x:Name="OrientationToggle"
+                    IsToggled="True"
+                    Toggled="OrientationToggle_Toggled"/>
+                <Label
+                    x:Name="OrientationLabel"
+                    Text="Orientation Off"
+                    Style="{StaticResource Headline}"/>
+            </HorizontalStackLayout>
+            
+
+            <Button
+                x:Name="VibrateStartButton"
+                Text="Vibrate"
+                Clicked="VibrateStartButton_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
