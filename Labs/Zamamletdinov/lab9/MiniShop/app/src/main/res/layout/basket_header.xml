@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/basketTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lab2(Zamaletdinov)"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/basketText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basket"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+</LinearLayout>
