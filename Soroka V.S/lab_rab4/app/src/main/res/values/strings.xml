@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MiniShop</string>
+    <string name="nameText">Каталог продуктов</string>
+    <string name="buttonText">Корзина</string>
+    <string name="buttonDelete">Удалить</string>
+
+</resources>
