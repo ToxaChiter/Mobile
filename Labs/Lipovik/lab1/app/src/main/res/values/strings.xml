@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">lab1</string>
+    <string name="list">Lipovik\'s\nsensList</string>
+    <string name="light">Light</string>
+    <string name="accel">Accel</string>
+    <string name="orientation">Orien-\ntation</string>
+    <string name="info">Info</string>
+</resources>
