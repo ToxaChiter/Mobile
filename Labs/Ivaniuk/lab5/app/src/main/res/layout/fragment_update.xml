@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/fragUPDATE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginTop="60dp"
+        android:text="Обновление содержимого заметки:" />
+
+    <EditText
+        android:id="@+id/editTextId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Введите ID заметки"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp"
+        android:hint="Введите новое описание заметки"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Обновить"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:onClick="onClickUpDate" />
+
+</LinearLayout>

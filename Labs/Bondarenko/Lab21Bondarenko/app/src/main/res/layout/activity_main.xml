@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/accelerometerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/accelerometer_name"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/xValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/x_value"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accelerometerTextView" />
+
+        <TextView
+            android:id="@+id/yValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xValue"
+            android:layout_marginTop="10dp"
+            android:text="@string/y_value"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/xValue" />
+
+        <TextView
+            android:id="@+id/zValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yValue"
+            android:layout_marginTop="10dp"
+            android:text="@string/z_value"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yValue" />
+
+        <TextView
+            android:id="@+id/shakeInfoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/accelerometerTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/shake_info"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/zValue" />
+
+        <TextView
+            android:id="@+id/speedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/speed_value"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shakeInfoTextView" />
+
+        <TextView
+            android:id="@+id/accelerationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/speedTextView"
+            android:layout_marginTop="10dp"
+            android:text="@string/acceleration_value"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/speedTextView" />
+
+        <TextView
+            android:id="@+id/GPSTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/gps_name"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accelerationTextView" />
+
+        <Button
+            android:id="@+id/btnLocationSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="onClickLocationSettings"
+            android:text="@string/location_settings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/GPSTextView" />
+
+        <TextView
+            android:id="@+id/IsGPSEnabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/is_gps_enabled"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLocationSettings" />
+
+        <TextView
+            android:id="@+id/latitudeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/latitude_value"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IsGPSEnabled" />
+
+        <TextView
+            android:id="@+id/longitudeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/latitudeText"
+            android:layout_marginTop="10dp"
+            android:text="@string/longitude_value"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/latitudeText" />
+
+        <TextView
+            android:id="@+id/altitudeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/latitudeText"
+            android:layout_marginTop="10dp"
+            android:text="@string/altitude_value"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/longitudeText" />
+
+        <TextView
+            android:id="@+id/satellitesInfoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/altitudeText"
+            android:layout_marginTop="10dp"
+            android:text="@string/satellites_info"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/altitudeText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/accelerometerTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:text="@string/accelerometer_name"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.497"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/xValue"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="@string/x_value"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/accelerometerTextView" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/yValue"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/xValue"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="@string/y_value"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/xValue" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/zValue"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/yValue"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="@string/z_value"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/yValue" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/shakeInfoTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/accelerometerTextView"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="@string/shake_info"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/zValue" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/speedTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="@string/speed_value"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/shakeInfoTextView" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/accelerationTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/speedTextView"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="@string/acceleration_value"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/speedTextView" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/GPSTextView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:text="@string/gps_name"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/accelerationTextView" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnLocationSettings"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:onClick="onClickLocationSettings"-->
+<!--        android:text="@string/location_settings"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/GPSTextView" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/IsGPSEnabled"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="@string/is_gps_enabled"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btnLocationSettings" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/latitudeText"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="@string/latitude_value"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/IsGPSEnabled" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/longitudeText"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/latitudeText"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="@string/longitude_value"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/latitudeText" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/altitudeText"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/latitudeText"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="@string/altitude_value"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/longitudeText" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/satellitesInfoText"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/latitudeText"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="@string/altitude_value"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/longitudeText" />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

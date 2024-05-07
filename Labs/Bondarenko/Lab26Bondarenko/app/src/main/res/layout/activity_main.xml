@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/id_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+<!--    <Button-->
+<!--        android:id="@+id/btnRoute"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginStart="5dp"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:onClick="onRouteButtonClick"-->
+<!--        android:text="Построить маршрут" />-->
+
+    <ImageButton
+        android:id="@+id/route_image_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:padding="4dp"
+        android:background="@drawable/route_button_background"
+        android:onClick="onRouteButtonClick"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_route" />
+
+    <Switch
+        android:id="@+id/switch_3d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="5dp"
+        android:minHeight="48dp"
+        android:trackTint="@color/google_blue"
+        android:thumbTint="@color/white"
+        android:text="@string/switch_3d_text"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="0dp"-->
+<!--        android:layout_marginEnd="0dp"-->
+<!--        android:layout_marginBottom="495dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <EditText-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="27dp"-->
+<!--            android:layout_marginEnd="24dp"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            android:hint="@string/search_hint"-->
+<!--            android:minHeight="48dp"-->
+<!--            android:textSize="12sp" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/imageButton2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:src="@android:drawable/btn_star" />-->
+<!--    </LinearLayout>-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded_corner_background"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/search_edit_text"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="2dp"
+            android:layout_toStartOf="@+id/search_image_button"
+            android:hint="@string/search_hint"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/search_image_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="1dp"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="centerInside"
+            android:onClick="onSearchButtonClick"
+            android:src="@drawable/ic_search" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

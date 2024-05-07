@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lab26Bondarenko</string>
+    <string name="switch_3d_text">3D</string>
+    <string name="search_hint">Введите название метки или координаты</string>
+</resources>
