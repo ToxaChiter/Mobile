@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/fragUPDATE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Введите ID заметки"
+            android:textSize="22sp"
+            android:layout_marginBottom="40dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/editTextId"
+            android:layout_marginTop="150dp" app:layout_constraintHorizontal_bias="0.497"/>
+    <EditText
+            android:id="@+id/editTextId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Введите ID заметки"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@+id/fragUPDATE"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="108dp" app:layout_constraintHorizontal_bias="0.0"/>
+    <EditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Введите новое описание заметки"
+            android:inputType="textMultiLine"
+            app:layout_constraintTop_toBottomOf="@+id/editTextId"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonUpdate" app:layout_constraintHorizontal_bias="0.0"/>
+    <Button
+            android:onClick="onClickUpDate"
+            android:id="@+id/buttonUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Обновить"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@id/editTextDescription"
+            app:layout_constraintStart_toStartOf="@id/editTextDescription"
+            app:layout_constraintEnd_toEndOf="@id/editTextDescription"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.498"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

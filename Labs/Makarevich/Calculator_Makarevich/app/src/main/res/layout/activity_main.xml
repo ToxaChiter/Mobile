@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#86DCCAFD"
+        tools:context=".MainActivity">
+
+    <EditText
+            android:id="@+id/Makarevich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Макаревич Е.С. (ПО-8)"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:background="#7E8E53F8"
+            android:padding="10dp"
+            android:gravity="right"
+            tools:ignore="HardcodedText"/>
+
+    <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="match_parent"
+            android:layout_height="383dp"
+            android:layout_margin="10dp"
+            android:text="0"
+            android:textSize="36sp"
+            android:textColor="@color/black"
+            android:background="#0084F1FF"
+            android:padding="10dp"
+            android:gravity="right|center"
+            android:inputType="text"
+            android:cursorVisible="false"
+            tools:ignore="HardcodedText,LabelFor,RtlHardcoded"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/buttonAC"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="@string/ac"
+                android:textSize="18sp"
+                android:background="@color/blue"
+                android:onClick="clickAC"
+                tools:ignore="RtlHardcoded"/>
+
+        <Button
+                android:id="@+id/buttonChangeSing"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="+/-"
+                android:textSize="18sp"
+                android:background="@color/blue"
+                android:onClick="clickNumber"
+                tools:ignore="RtlHardcoded" />
+
+
+        <Button
+                android:id="@+id/buttonPercent"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="%"
+                android:textSize="18sp"
+                android:background="@color/blue"
+                android:onClick="clickPercent"
+                tools:ignore="RtlHardcoded" />
+
+        <Button
+                android:id="@+id/buttonDivision"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="÷"
+                android:textSize="18sp"
+                android:background="@color/blue"
+                android:onClick="Operation"
+                tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+
+    <!-- Продолжение кода калькулятора -->
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/buttonSeven"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="7"
+                android:textSize="18sp"
+                android:background="@color/lightblue"
+                android:onClick="clickNumber"
+                tools:ignore="RtlHardcoded" />
+
+        <Button
+                android:id="@+id/buttonEight"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="8"
+                android:textSize="18sp"
+                android:background="@color/lightblue"
+                android:onClick="clickNumber"
+                tools:ignore="RtlHardcoded" />
+
+        <Button
+                android:id="@+id/buttonNine"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="9"
+                android:textSize="18sp"
+                android:background="@color/lightblue"
+                android:onClick="clickNumber"
+                tools:ignore="RtlHardcoded" />
+
+        <Button
+                android:id="@+id/buttonMultiplication"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="×"
+                android:textSize="18sp"
+                android:background="@color/green"
+                android:onClick="Operation"
+                tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/buttonFour"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="4"
+                android:textSize="18sp"
+                android:background="@color/lightblue"
+                android:onClick="clickNumber"
+                tools:ignore="RtlHardcoded" />
+
+        <Button
+                android:id="@+id/buttonFive"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="5"
+                android:textSize="18sp"
+                android:background="@color/lightblue"
+                android:onClick="clickNumber"
+                tools:ignore="RtlHardcoded" />
+
+        <Button
+                android:id="@+id/buttonSix"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="6"
+                android:textSize="18sp"
+                android:background="@color/lightblue"
+                android:onClick="clickNumber"
+                tools:ignore="RtlHardcoded" />
+
+        <Button
+                android:id="@+id/buttonMinus"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="−"
+                android:textSize="18sp"
+                android:background="@color/green"
+                android:onClick="Operation"
+                tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/buttonOne"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="1"
+                android:textSize="18sp"
+                android:background="@color/lightblue"
+                android:onClick="clickNumber"
+                tools:ignore="RtlHardcoded" />
+
+        <Button
+                android:id="@+id/buttonTwo"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="2"
+                android:textSize="18sp"
+                android:background="@color/lightblue"
+                android:onClick="clickNumber"
+                tools:ignore="RtlHardcoded" />
+
+        <Button
+                android:id="@+id/buttonThree"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="3"
+                android:textSize="18sp"
+                android:background="@color/lightblue"
+                android:onClick="clickNumber"
+                tools:ignore="RtlHardcoded" />
+
+        <Button
+                android:id="@+id/buttonPlus"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="+"
+                android:textSize="18sp"
+                android:background="@color/green"
+                android:onClick="Operation"
+                tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/buttonNull"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="2"
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:background="@color/lightblue"
+                    android:onClick="clickNumber"
+                    tools:ignore="DuplicateIds,RtlHardcoded"/>
+
+            <Button
+                    android:id="@+id/buttonComma"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:text="."
+                    android:textSize="18sp"
+                    android:background="@color/lightblue"
+                    android:onClick="clickNumber"
+                    tools:ignore="DuplicateIds,RtlHardcoded" />
+
+            <Button
+                    android:id="@+id/buttonEqual"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:text="="
+                    android:textSize="18sp"
+                    android:background="@color/green"
+                    android:onClick="clickEqual"
+                    tools:ignore="DuplicateIds,RtlHardcoded" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
