@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:gravity="center">
+
+    <TextView
+            android:id="@+id/fragDEL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Введите ID заметки"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/editTextNoteId"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintHorizontal_bias="0.496" app:layout_constraintVertical_bias="0.93"/>
+    <EditText
+            android:id="@+id/editTextNoteId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Введите ID заметки"
+            android:inputType="number"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="388dp" app:layout_constraintHorizontal_bias="0.0"/>
+    <Button
+            android:onClick="onClickDel"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:text="Удалить"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@id/editTextNoteId"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.007"/> <!-- Изменение здесь -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

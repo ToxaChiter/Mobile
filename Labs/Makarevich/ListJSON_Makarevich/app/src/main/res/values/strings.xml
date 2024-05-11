@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ListJSON_Makarevich</string>
+    <string name="nameText">Библиотека фильмов и сериалов (Макаревич)</string>
+    <string name="ButtonDownload">Загрузить данные</string>
+</resources>

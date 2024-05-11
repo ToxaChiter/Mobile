@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/resultField"
+        android:layout_width="144dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="116dp"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/operationField"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/firstButtonPanel"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberField">
+
+        <Button
+            android:id="@+id/n7"
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#786A6A"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/n8"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#786A6A"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/n9"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#786A6A"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/div"
+            android:layout_width="39dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#BAAEAE"
+            android:text="/" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/numberField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:inputType="phone"
+        android:textSize="20dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultField" />
+
+    <TextView
+        android:id="@+id/operationField"
+        android:layout_width="109dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="116dp"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/resultField"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/forthButtonPanel"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thirdButtonPanel">
+
+        <Button
+            android:id="@+id/n0"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#786A6A"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/comma"
+            android:layout_width="74dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#BAAEAE"
+            android:text="," />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="67dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#BAAEAE"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/eq"
+            android:layout_width="73dp"
+            android:layout_height="83dp"
+            android:layout_weight="1"
+            android:backgroundTint="#EDB33B"
+            android:text="="
+            android:textColorLink="#FF9800" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirdButtonPanel"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondButtonPanel">
+
+        <Button
+            android:id="@+id/n1"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#786A6A"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/n2"
+            android:layout_width="76dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#786A6A"
+            android:tag="num"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/n3"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#786A6A"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#BAAEAE"
+            android:text="-" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondButtonPanel"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstButtonPanel">
+
+        <Button
+            android:id="@+id/n4"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#786A6A"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/n5"
+            android:layout_width="38dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#786A6A"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/n6"
+            android:layout_width="39dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#786A6A"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/mul"
+            android:layout_width="38dp"
+            android:layout_height="81dp"
+            android:layout_weight="1"
+            android:backgroundTint="#BAAEAE"
+            android:text="*" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/CbS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Caculator by Shlykov"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

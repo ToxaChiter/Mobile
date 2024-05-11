@@ -1,0 +1,84 @@
+{
+  "movies_and_shows": [
+    {
+      "id": 1,
+      "title": "Игра Престолов (Макаревич)",
+      "type": "Сериал",
+      "director": "Дэвид Бениофф, Дэвид Наттер",
+      "year": "2011-2019",
+      "rating": "9.3",
+      "genre": "Фэнтези, Драма",
+      "image": "https://telegra.ph/file/61fa06d17834e53234ad2.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Звездные войны: Эпизод IV - Новая надежда",
+      "type": "Фильм",
+      "director": "Джордж Лукас",
+      "year": "1977",
+      "rating": "8.6",
+      "genre": "Фантастика, Боевик, Приключения",
+      "image": "https://pic.rutubelist.ru/video/41/1a/411a2eb910074003d46e78ef3e7653f4.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Властелин колец: Братство кольца",
+      "type": "Фильм",
+      "director": "Питер Джексон",
+      "year": "2001",
+      "rating": "8.8",
+      "genre": "Фэнтези, Драма, Приключения",
+      "image": "https://sun9-9.userapi.com/impg/B7EIiBIjB9dy32DibMcCHQEB0j1SM8H5CKsIBg/D84aVZ1GsX8.jpg?size=720x1080&quality=96&sign=791ca16b3277b7497f3061d30340741e&c_uniq_tag=bLwdoAERB23sx32SejJbRfggt8EtZpOT6aMFhWyxtk4&type=album"
+    },
+    {
+      "id": 4,
+      "title": "Матрица",
+      "type": "Фильм",
+      "director": "Братья Вачовски",
+      "year": "1999",
+      "rating": "8.7",
+      "genre": "Фантастика, Боевик",
+      "image": "https://w.forfun.com/fetch/31/31d32912965ec8500bf83911f6238959.jpeg?w=2000"
+    },
+    {
+      "id": 5,
+      "title": "Шерлок",
+      "type": "Сериал",
+      "director": "Марк Гэтисс, Стивен Моффат",
+      "year": "2010-2017",
+      "rating": "9.1",
+      "genre": "Детектив, Триллер",
+      "image": "https://w.forfun.com/fetch/d7/d77980b672e07b30ed3fad4ee3204ab3.jpeg"
+    },
+    {
+      "id": 6,
+      "title": "Назад в будущее",
+      "type": "Фильм",
+      "director": "Роберт Земекис",
+      "year": "1985",
+      "rating": "8.5",
+      "genre": "Фантастика, Комедия, Приключения",
+      "image": "https://gas-kvas.com/uploads/posts/2023-09/1693548833_gas-kvas-com-p-risunki-na-prazdnik-den-nazad-v-budushchee-19.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Гарри Поттер и философский камень",
+      "type": "Фильм",
+      "director": "Крис Коламбус",
+      "year": "2001",
+      "rating": "7.9",
+      "genre": "Фэнтези, Приключения",
+      "image": "https://i.ytimg.com/vi/LgCYIjNRIAQ/maxresdefault.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Друзья",
+      "type": "Сериал",
+      "director": "Дэвид Крейн, Марта Кауффман",
+      "year": "1994-2004",
+      "rating": "8.9",
+      "genre": "Комедия, Романтика",
+      "image": "https://voiretmanger.fr/wp-content/uploads/2015/11/friends-nbc.jpg"
+    }
+  ]
+}

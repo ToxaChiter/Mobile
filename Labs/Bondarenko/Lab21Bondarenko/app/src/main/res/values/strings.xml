@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Lab21Bondarenko</string>
+
+    <string name="accelerometer_name">Акселерометр\nРазработал Бондаренко</string>
+    <string name="shake_info">Встряхните устройство!</string>
+
+    <string name="x_value">X:</string>
+    <string name="y_value">Y:</string>
+    <string name="z_value">Z:</string>
+    <string name="speed_value">Скорость:</string>
+    <string name="acceleration_value">Ускорение:</string>
+
+    <string name="provider_gps">GPS</string>
+    <string name="provider_network">Network</string>
+
+    <string name="gps_name">Датчик GPS\nРазработал Бондаренко</string>
+    <string name="location_settings">Настройки местоположения\nНажимает Бондаренко</string>
+    <string name="is_gps_enabled">GPS</string>
+
+    <string name="longitude_value">Долгота:</string>
+    <string name="latitude_value">Широта:</string>
+    <string name="altitude_value">Высота:</string>
+    <string name="satellites_info">Спутники:</string>
+</resources>

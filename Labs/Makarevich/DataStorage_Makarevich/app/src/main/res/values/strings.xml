@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DataStorage_Makarevich</string>
+    <string name="nameText">DataStorage</string>
+    <string name="editIDforDownload">Введите ID журнала ...</string>
+    <string name="butDownloadText">Скачать</string>
+    <string name="butSeeText">Просмотр файла</string>
+    <string name="butDeleteText">Удалить (Макаревич)</string>
+    <string name="butPoput">+</string>
+</resources>
