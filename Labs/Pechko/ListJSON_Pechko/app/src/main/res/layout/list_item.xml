@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+    <ImageView
+            android:id="@+id/flowerImageView"
+            android:layout_width="105dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="-90dp"/>
+
+
+    <TextView
+            android:id="@+id/flowerNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="-55dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textColor="@color/black"/>
+
+
+    <TextView
+            android:id="@+id/flowerColorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"/>
+
+    <Space
+            android:layout_width="wrap_content"
+            android:layout_height="16dp" />
+
+    <TextView
+            android:id="@+id/flowerOriginTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginLeft="110dp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textColor="@color/black"/>
+
+    <Space
+            android:layout_width="wrap_content"
+            android:layout_height="32dp" />
+    <TextView
+            android:id="@+id/flowerMeaningTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Значение: "
+            android:layout_marginLeft="110dp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textColor="@color/black"/>
+</LinearLayout>
