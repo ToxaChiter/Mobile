@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="ifContentScrolls"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:orientation="vertical"
+        android:weightSum="2"
+        tools:context=".MainActivity">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:context=".MainActivity"
+                android:layout_weight="1"
+        >
+
+    <!-- Central radial menu button -->
+    <ImageButton
+            android:id="@+id/radialMenuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu"
+
+            android:background="@android:color/transparent"
+            android:contentDescription="Radial Menu Button"
+            android:layout_centerInParent="true"/>
+
+    <!-- Button 1 -->
+    <ImageButton
+            android:id="@+id/btnSensList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/list"
+            android:tooltipText="ASerkoList"
+
+            android:backgroundTint="#FF9800"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:onClick="onClickSensList"
+            android:visibility="gone"
+            />
+
+    <!-- Button 2 -->
+    <ImageButton
+            android:id="@+id/btnSensLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lightbulb"
+            android:tooltipText="ASerkoLight"
+
+            android:backgroundTint="#FFC107"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:onClick="onClickSensLight"
+            android:visibility="gone"/>
+
+    <!-- Button 3 -->
+    <ImageButton
+            android:id="@+id/btnSensAccelerometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tooltipText="ASerkoAccelerometer"
+
+            android:backgroundTint="#FFEB3B"
+            android:src="@drawable/progress"
+
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:onClick="onClickShowAccelData"
+            android:visibility="gone"/>
+
+    <!-- Button 4 -->
+    <ImageButton
+            android:id="@+id/btnSensOrientation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tooltipText="ASerkoOrient"
+
+
+            android:src="@drawable/phone"
+            android:backgroundTint="#FFC107"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:onClick="onClickShowOrientationData"
+            android:visibility="gone"/>
+
+    <!-- Button 5 -->
+    <ImageButton
+            android:id="@+id/btnSensGyroscope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tooltipText="ASerkoGyroscope"
+
+            android:backgroundTint="#FF9800"
+            android:src="@drawable/gyroscope"
+
+
+            android:layout_centerHorizontal="true"
+            android:onClick="onClickSensGyroscope"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+
+    <!-- Button 6 -->
+    <ImageButton
+            android:id="@+id/btnSensProximity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/radar"
+            android:tooltipText="ASerkoProximity"
+
+
+            android:onClick="onClickProximityData"
+            android:backgroundTint="#FFEB3B"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+
+    <!-- Your existing layout elements -->
+
+
+</RelativeLayout>
+    <ImageView
+            android:id="@+id/palm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/halt_palm"
+            android:layout_gravity="center"
+
+            android:visibility="gone"/>
+    <ScrollView
+            android:id="@+id/scroll"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_above="@id/radialMenuButton"
+            >
+
+
+        <TextView
+                android:id="@+id/tvText"
+                android:text="Alexandra Serko"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Google_Maps_Serko</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string-array name="locations_array">
+        <item>New York City</item>
+        <item>Los Angeles</item>
+        <!-- Add more locations as needed -->
+    </string-array>
+    <string name="google_api_key">AIzaSyCQOmPlvzblQX4r2z6yPCFfxLzOGiSjjdE</string>
+</resources>
